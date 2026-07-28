@@ -1,19 +1,10 @@
 <!doctype html>
 <html>
   <head>
-    <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
     <base href="/" />
 
     <meta charset="UTF-8" />
@@ -34,6 +25,29 @@
   </head>
   <body>
     <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #071008;
+        overscroll-behavior: none;
+      }
+
+      body {
+        min-height: 100vh;
+        min-height: 100dvh;
+      }
+
+      flutter-view {
+        width: 100%;
+        height: 100%;
+        display: block;
+        background-color: #071008;
+      }
+
       :root {
         --loader-bg: #0b1115;
         --loader-bg-2: #111a20;
